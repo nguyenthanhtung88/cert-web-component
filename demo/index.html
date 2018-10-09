@@ -4,10 +4,10 @@
     <title>blockchain-certificate demo</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
-    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
 
-    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
-    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../bower_components/iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../bower_components/iron-demo-helpers/demo-snippet.html">
 
     <link rel="import" href="../blockchain-certificate.html">
     <link rel="import" href="../validate-certificate.html">
@@ -23,7 +23,7 @@
       <p>Here's how you can render a locally hosted Blockcert.</p>
       <demo-snippet>
         <template>
-          <blockchain-certificate href="./sample_signed_cert-valid-1.2.0.json"></blockchain-certificate>
+          <blockchain-certificate href="./blockchain_certificates/3bc1a96a-3501-46ed-8f75-49612bbac257.json"></blockchain-certificate>
         </template>
       </demo-snippet>
 
@@ -51,7 +51,7 @@
         </template>
       </demo-snippet>
 
-      <h3>blockchain-certificate demo - externally hosted file</h3>
+      <!-- <h3>blockchain-certificate demo - externally hosted file</h3>
       <p>
         You can also render a certificate hosted by another issuer. If they've
         set up their CORS configuration to allow external hosting, it'll just
@@ -62,7 +62,7 @@
         <template>
           <blockchain-certificate href="https://coins.media.mit.edu/56aa4c9bf3a6a0125aaf24bf"></blockchain-certificate>
         </template>
-      </demo-snippet>
+      </demo-snippet> -->
     </div>
   </body>
 </html>
